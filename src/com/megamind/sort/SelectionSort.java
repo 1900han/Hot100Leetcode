@@ -1,30 +1,30 @@
 package com.megamind.sort;
 
 /**
- * O(n2)
+ * 永远是O(n^2)
  */
 public class SelectionSort {
     private SelectionSort() {
     }
 
-    public static <E extends Comparable<E>> void sort(E[] arrs) {
-        int length = arrs.length;
+    public static <E extends Comparable<E>> void sort(E[] arr) {
+        int length = arr.length;
         for (int i = 0; i < length; i++) {
             int minIndex = i;
             for (int j = i; j < length; j++) {
-                if (arrs[j].compareTo(arrs[minIndex]) < 0) {
+                if (arr[j].compareTo(arr[minIndex]) < 0) {
                     minIndex = j;
                 }
             }
 
-            swap(arrs, i, minIndex);
+            swap(arr, i, minIndex);
         }
     }
 
-    private static <E> void swap(E[] arrs, int i, int j) {
-        E t = arrs[i];
-        arrs[i] = arrs[j];
-        arrs[j] = t;
+    private static <E> void swap(E[] arr, int i, int j) {
+        E t = arr[i];
+        arr[i] = arr[j];
+        arr[j] = t;
     }
 
     public static void main(String[] args) {
