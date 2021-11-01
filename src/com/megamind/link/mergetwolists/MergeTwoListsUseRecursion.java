@@ -1,4 +1,4 @@
-package com.megamind.mergetwolists;
+package com.megamind.link.mergetwolists;
 
 import com.megamind.link.ListNode;
 

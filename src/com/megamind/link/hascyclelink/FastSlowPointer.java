@@ -1,4 +1,4 @@
-package com.megamind.hascyclelink;
+package com.megamind.link.hascyclelink;
 
 import com.megamind.link.ListNode;
 
