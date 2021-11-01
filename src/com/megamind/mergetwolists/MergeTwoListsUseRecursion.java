@@ -1,5 +1,7 @@
 package com.megamind.mergetwolists;
 
+import com.megamind.link.ListNode;
+
 public class MergeTwoListsUseRecursion {
     public MergeTwoListsUseRecursion() {
     }
@@ -16,20 +18,4 @@ public class MergeTwoListsUseRecursion {
         }
     }
 
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 }
