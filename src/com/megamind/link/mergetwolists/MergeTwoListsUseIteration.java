@@ -14,16 +14,16 @@ public class MergeTwoListsUseIteration {
         ListNode result = dummyHead;
         while (l1 != null && l2 != null) {
             if (l1.val < l2.val) {
-                dummyHead.next = l1;
+                result.next = l1;
                 l1 = l1.next;
             } else {
-                dummyHead.next = l2;
+                result.next = l2;
                 l2 = l2.next;
             }
-            dummyHead = dummyHead.next;
+            result = result.next;
         }
-        dummyHead.next = (l1 == null ? l2 : l1);
-        return result.next;
+        result.next = (l1 == null ? l2 : l1);
+        return dummyHead.next;
     }
 
 
